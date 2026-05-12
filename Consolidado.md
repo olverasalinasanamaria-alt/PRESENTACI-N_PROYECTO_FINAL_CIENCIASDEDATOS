@@ -863,15 +863,72 @@ Para mejorar el modelo en futuras versiones se recomienda:
 - Incorporar variables categóricas  
 
 ---
+# 29. LIMITACIONES DEL MODELO
 
-# 29. CONCLUSIÓN FINAL
+Aunque el modelo logró identificar patrones importantes relacionados con el precio de las propiedades Airbnb, existen algunas limitaciones que pueden afectar la precisión de las predicciones.
 
-Este proyecto permitió aplicar técnicas reales de Ciencia de Datos y Machine Learning sobre una base de datos real de Airbnb.
+Entre las principales limitaciones se encuentran:
 
-A través del análisis exploratorio, limpieza de datos, visualización y construcción del modelo predictivo, fue posible identificar variables importantes que influyen en el precio de las propiedades.
+- No se utilizó la ubicación geográfica exacta de las propiedades.
+- Algunas variables categóricas no fueron incorporadas al modelo.
+- El modelo de regresión lineal no siempre puede representar relaciones complejas entre variables.
+- Existen factores externos que afectan el precio y no están presentes en el dataset, como temporada, demanda y amenidades.
 
-El modelo logró detectar patrones reales y realizar predicciones funcionales utilizando información relacionada con capacidad, habitaciones, baños y calificaciones.
+A pesar de estas limitaciones, el modelo logró encontrar relaciones reales dentro de los datos y generar predicciones funcionales.
 
-Finalmente, este proyecto demuestra cómo la Ciencia de Datos puede transformar datos en información útil para apoyar decisiones reales mediante técnicas de análisis y Machine Learning.
+---
+# 30. INTERPRETACIÓN ADICIONAL DEL MODELO
 
+El valor de R² = 0.32 indica que el modelo logra explicar aproximadamente el 32% de la variación del precio de las propiedades Airbnb utilizando las variables seleccionadas.
 
+Aunque el porcentaje no es extremadamente alto, sí demuestra que existe una relación significativa entre las características del alojamiento y el precio.
+
+El porcentaje restante puede depender de variables no incluidas en el modelo, como:
+
+- ubicación exacta,
+- temporada,
+- amenidades,
+- reputación del anfitrión,
+- demanda del mercado.
+
+---
+# 31. INTERPRETACIÓN DE COEFICIENTES
+
+Cada coeficiente del modelo representa cuánto puede cambiar el precio estimado cuando una variable aumenta una unidad, manteniendo las demás constantes.
+
+Por ejemplo:
+
+- Si aumenta la capacidad de huéspedes (accommodates), el precio tiende a aumentar.
+- Más habitaciones y baños también generan incrementos en el precio.
+- Las propiedades con mejores calificaciones suelen presentar precios ligeramente más altos.
+
+Esto permitió comprender mejor qué características influyen más en el comportamiento del precio dentro de Airbnb.
+---
+
+# 32. CONCLUSIÓN TÉCNICA FINAL
+
+Desde una perspectiva de Ciencia de Datos, el modelo demostró que es posible generar predicciones funcionales utilizando técnicas de Regresión Lineal Múltiple aplicadas sobre datos reales.
+
+Además, el proyecto permitió identificar relaciones importantes entre variables y comprender cómo el análisis de datos puede apoyar procesos de toma de decisiones utilizando Machine Learning.
+
+---
+# 33. CONCLUSIÓN FINAL
+
+Este proyecto permitió aplicar técnicas reales de Ciencia de Datos y Machine Learning utilizando una base de datos real de Airbnb obtenida desde Kaggle.
+
+A través del proceso de exploración, limpieza de datos, análisis exploratorio, visualización y construcción del modelo predictivo, fue posible identificar variables importantes que influyen en el precio de las propiedades.
+
+Las variables con mayor impacto fueron:
+
+- accommodates
+- bedrooms
+- bathrooms
+
+Lo anterior demuestra que propiedades con mayor capacidad y tamaño suelen presentar precios más elevados.
+
+El modelo de Regresión Lineal Múltiple logró explicar aproximadamente el 32% del comportamiento del precio mediante un valor de R² = 0.32, lo cual indica que sí existen patrones importantes dentro de los datos analizados.
+
+Además, el proyecto permitió comprender mejor el flujo completo de trabajo dentro de un proyecto de Ciencia de Datos, desde la preparación del dataset hasta la interpretación de resultados y generación de predicciones.
+
+Finalmente, este proyecto demuestra cómo la Ciencia de Datos y el Machine Learning pueden utilizarse para transformar datos reales en información útil para apoyar la toma de decisiones y resolver problemas del mundo real.
+---
